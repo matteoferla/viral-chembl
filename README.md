@@ -57,6 +57,135 @@ Count of entries (not dedupicated) of top 20 activity types:
 It is clear that problematic entries are problematic for multiple values,
 such as ambiguous `standard_type` and missing `assay_tax_id` ("Unknown" in table above).
 
+In terms of the viruses (one count per species per molecule):
+
+Realm level:
+
+| standard_type   |   Riboviria |   Duplodnaviria |   Monodnaviria |   Varidnaviria |
+|:----------------|------------:|----------------:|---------------:|---------------:|
+| IC50            |       30387 |            1645 |             63 |            169 |
+| Inhibition      |        7979 |             457 |             54 |             22 |
+| Ki              |        5495 |              83 |              1 |              6 |
+| EC50            |        4183 |              88 |              0 |              0 |
+| Activity        |        1857 |             545 |             37 |             25 |
+| Kd              |         965 |              55 |              7 |              0 |
+| Ratio           |         202 |               4 |              0 |              0 |
+| ID50            |         331 |               4 |              0 |              0 |
+| Ratio IC50      |         101 |               2 |              0 |              0 |
+| EC90            |         687 |               0 |              0 |              0 |
+
+Phylum level:
+
+| phylum_id          |   IC50 |   Inhibition |   Ki |   EC50 |   Activity |   Kd |
+|:-------------------|-------:|-------------:|-----:|-------:|-----------:|-----:|
+| Artverviricota     |  14367 |         2861 | 3044 |   1054 |       1305 |  463 |
+| Kitrinoviricota    |   8258 |         2446 | 1913 |   1719 |        136 |  228 |
+| Negarnaviricota    |   4102 |         1214 |  248 |   1182 |        189 |  208 |
+| Pisuviricota       |   3660 |         1457 |  290 |    228 |        225 |   66 |
+| Peploviricota      |   1608 |          415 |   72 |     88 |        503 |   35 |
+| Uroviricota        |     37 |           42 |   11 |      0 |         42 |   20 |
+| Cossaviricota      |     63 |           54 |    1 |      0 |         33 |    7 |
+| Nucleocytoviricota |    112 |           20 |    6 |      0 |         23 |    0 |
+| Preplasmiviricota  |     57 |            2 |    0 |      0 |          2 |    0 |
+| Duplornaviricota   |      0 |            1 |    0 |      0 |          2 |    0 |
+| Phixviricota       |      0 |            0 |    0 |      0 |          4 |    0 |
+
+Family level:
+
+| family_id          |   IC50 |   Inhibition |   Ki |   EC50 |   Activity |   Kd |
+|:-------------------|-------:|-------------:|-----:|-------:|-----------:|-----:|
+| Retroviridae       |  14309 |         2726 | 3044 |    798 |       1217 |  463 |
+| Flaviviridae       |   8257 |         2443 | 1910 |   1703 |        136 |  228 |
+| Orthomyxoviridae   |   3530 |          877 |  248 |    187 |         92 |  194 |
+| Coronaviridae      |   2936 |         1134 |  168 |    109 |        196 |   55 |
+| Orthoherpesviridae |   1606 |          415 |   72 |     86 |        503 |   35 |
+| Straboviridae      |     25 |           31 |    0 |      0 |          9 |   20 |
+| Filoviridae        |    263 |          125 |    0 |     90 |         63 |   12 |
+| Picornaviridae     |    452 |          288 |  105 |    107 |         27 |   11 |
+| Papillomaviridae   |     28 |           49 |    1 |      0 |          5 |    7 |
+| Rhabdoviridae      |     74 |           61 |    0 |      0 |         10 |    2 |
+| Solemoviridae      |      0 |            0 |    0 |      0 |          1 |    0 |
+| Mesoniviridae      |      0 |            0 |    4 |      0 |          0 |    0 |
+| Autographiviridae  |      9 |            0 |    0 |      0 |         17 |    0 |
+| Dicistroviridae    |      0 |            1 |    0 |      0 |          0 |    0 |
+| Polyomaviridae     |     35 |            5 |    0 |      0 |         28 |    0 |
+| Sedoreoviridae     |      0 |            1 |    0 |      0 |          2 |    0 |
+| Potyviridae        |      1 |            0 |    0 |      0 |          1 |    0 |
+| Poxviridae         |     84 |           20 |    1 |      0 |          0 |    0 |
+| Caliciviridae      |    271 |           34 |   13 |     12 |          0 |    0 |
+| Hepadnaviridae     |     58 |          135 |    0 |    256 |         88 |    0 |
+| Pneumoviridae      |    120 |            6 |    0 |    285 |          0 |    0 |
+| Paramyxoviridae    |    112 |            2 |    0 |     16 |         24 |    0 |
+| Togaviridae        |      1 |            3 |    3 |     16 |          0 |    0 |
+| Microviridae       |      0 |            0 |    0 |      0 |          4 |    0 |
+| Corticoviridae     |      0 |            0 |    0 |      0 |          2 |    0 |
+| Adenoviridae       |     57 |            2 |    0 |      0 |          0 |    0 |
+| Phycodnaviridae    |     28 |            0 |    5 |      0 |         23 |    0 |
+| Arenaviridae       |      3 |          143 |    0 |    604 |          0 |    0 |
+
+Genus level:
+
+| genus_id            |   IC50 |   Inhibition |   Ki |   EC50 |   Activity |   Kd |
+|:--------------------|-------:|-------------:|-----:|-------:|-----------:|-----:|
+| Lentivirus          |  14055 |         2581 | 3020 |    795 |       1169 |  461 |
+| Hepacivirus         |   6637 |          575 | 1635 |   1622 |         89 |  212 |
+| Alphainfluenzavirus |   3108 |          788 |  186 |    186 |         92 |  159 |
+| Betacoronavirus     |   2771 |         1132 |  164 |    108 |        193 |   55 |
+| Rhadinovirus        |     62 |           43 |    0 |      0 |          1 |   30 |
+| Tequatrovirus       |     25 |           31 |    0 |      0 |          9 |   20 |
+| Orthoflavivirus     |   1537 |         1860 |  275 |     81 |         46 |   16 |
+| Enterovirus         |    417 |          196 |  105 |    107 |         27 |   11 |
+| Orthoebolavirus     |     65 |            2 |    0 |      0 |         52 |    5 |
+| Alphapapillomavirus |     23 |           48 |    1 |      0 |          5 |    5 |
+| Lymphocryptovirus   |    193 |          173 |    0 |      0 |        428 |    3 |
+| Alpharetrovirus     |     51 |           74 |    2 |      0 |         19 |    2 |
+| Simplexvirus        |    468 |           75 |   60 |     57 |         34 |    2 |
+| Mupapillomavirus    |      0 |            0 |    0 |      0 |          0 |    2 |
+| Lyssavirus          |      0 |            0 |    0 |      0 |          0 |    2 |
+| Betainfluenzavirus  |    282 |            0 |   46 |      1 |          0 |    1 |
+| Gammacoronavirus    |    103 |            0 |    0 |      0 |          0 |    0 |
+| Henipavirus         |      0 |            0 |    0 |      8 |         12 |    0 |
+| Respirovirus        |     82 |            0 |    0 |      0 |          0 |    0 |
+| Teetrevirus         |      0 |            0 |    0 |      0 |          2 |    0 |
+| Orthoavulavirus     |     30 |            0 |    0 |      0 |          0 |    0 |
+| Svunavirus          |      0 |            1 |    0 |      0 |          0 |    0 |
+| Gammainfluenzavirus |      0 |            2 |    1 |      0 |          0 |    0 |
+| Kappapapillomavirus |      0 |            1 |    0 |      0 |          0 |    0 |
+| Lambdavirus         |      3 |           10 |   11 |      0 |         16 |    0 |
+| Sinsheimervirus     |      0 |            0 |    0 |      0 |          4 |    0 |
+| Betapolyomavirus    |     35 |            5 |    0 |      0 |         28 |    0 |
+| Alphacoronavirus    |     58 |            0 |    4 |      1 |          3 |    0 |
+| Orthopneumovirus    |    120 |            6 |    0 |    285 |          0 |    0 |
+| Mammarenavirus      |      3 |          143 |    0 |    604 |          0 |    0 |
+| Alphamesonivirus    |      0 |            0 |    4 |      0 |          0 |    0 |
+| Novirhabdovirus     |      0 |           36 |    0 |      0 |          0 |    0 |
+| Orthopoxvirus       |     84 |           20 |    1 |      0 |          0 |    0 |
+| Chlorovirus         |     28 |            0 |    5 |      0 |         23 |    0 |
+| Vesiculovirus       |     74 |           25 |    0 |      0 |         10 |    0 |
+| Varicellovirus      |    167 |            0 |    1 |      0 |          0 |    0 |
+| Cytomegalovirus     |    610 |           61 |   11 |     29 |         40 |    0 |
+| Orthohepadnavirus   |     41 |          130 |    0 |    256 |         88 |    0 |
+| Avihepadnavirus     |     17 |            5 |    0 |      0 |          0 |    0 |
+| Mastadenovirus      |     57 |            2 |    0 |      0 |          0 |    0 |
+| Corticovirus        |      0 |            0 |    0 |      0 |          2 |    0 |
+| Alphavirus          |      1 |            3 |    3 |     16 |          0 |    0 |
+| Pestivirus          |     81 |            8 |    0 |      0 |          1 |    0 |
+| Morbillivirus       |      0 |            2 |    0 |      8 |         12 |    0 |
+| Hepatovirus         |     22 |           87 |    0 |      0 |          0 |    0 |
+| Deltaretrovirus     |    105 |           65 |   14 |      0 |          8 |    0 |
+| Cardiovirus         |      0 |            2 |    0 |      0 |          0 |    0 |
+| Potyvirus           |      1 |            0 |    0 |      0 |          1 |    0 |
+| Enamovirus          |      0 |            0 |    0 |      0 |          1 |    0 |
+| Roseolovirus        |     21 |            0 |    0 |      0 |          0 |    0 |
+| Teseptimavirus      |      9 |            0 |    0 |      0 |         15 |    0 |
+| Teschovirus         |      0 |            1 |    0 |      0 |          0 |    0 |
+| Betaretrovirus      |      0 |            0 |    0 |      2 |          0 |    0 |
+| Norovirus           |     64 |           12 |   13 |      0 |          0 |    0 |
+| Gammaretrovirus     |     98 |            6 |    8 |      1 |         21 |    0 |
+| Cripavirus          |      0 |            1 |    0 |      0 |          0 |    0 |
+
+The genus level entries are more recognisable.
+
 ## Test set: target id issue
 
 The clade Herpesvirales was used as a test case,
