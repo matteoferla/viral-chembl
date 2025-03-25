@@ -186,6 +186,8 @@ Genus level:
 
 The genus level entries are more recognisable.
 
+For the top 50 compounds in each genus, see [compounds.md](compounds.md)
+
 ## Test set: target id issue
 
 The clade Herpesvirales was used as a test case,
