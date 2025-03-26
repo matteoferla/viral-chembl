@@ -188,6 +188,19 @@ The genus level entries are more recognisable.
 
 For the top 50 compounds in each genus, see [compounds.md](compounds.md)
 
+The distribution of compounds per family / genera shows a few clusters
+unique to a genus. These are likely congeneric series for a target for a species.
+HIV, Hep C virus and coronavirus have a few, but most other species have one or two such congeneric series.
+Note that this is coloured by genus, not by targets, so multiple clusters of molecules against a genus
+might target different protein.
+
+![mol-family-tsne.png](images/mol-family-tsne.png)
+![mol-genus-tsne.png](images/mol-genus-tsne.png)
+
+![most-typical-larger.png](images/most-typical-larger.png)
+
+![most-typical.png](images/most-typical.png)
+
 ## Test set: target id issue
 
 The clade Herpesvirales was used as a test case,
@@ -199,6 +212,7 @@ when the two datasets were made.
 
 A major problem is that the target ID is `Unchecked` (22226) for a large amount of assays.
 I believe this is why there is this incongruity.
+Ultimately, this could be related to the issues arising from the polyprotein nature of viral genomes.
 
 
 
