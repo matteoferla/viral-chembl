@@ -197,9 +197,8 @@ might target different protein.
 ![mol-family-tsne.png](images/mol-family-tsne.png)
 ![mol-genus-tsne.png](images/mol-genus-tsne.png)
 
-![most-typical-larger.png](images/most-typical-larger.png)
-
-![most-typical.png](images/most-typical.png)
+One think that comes up looking at the [compounds.md](compounds.md) 
+is that there are a lot of compounds that look like sugars —I think that is because of Tamiflu.
 
 ## Test set: target id issue
 
